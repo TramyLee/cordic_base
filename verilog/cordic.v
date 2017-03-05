@@ -374,6 +374,11 @@ always @(posedge clk or negedge rst_n) begin
     end
 
 
+always @(*)begin
+  if(x15>=16'b0111111111111111)
+    x15<=16'b0111111111111111;
+  end
+
 
 
 
@@ -445,6 +450,9 @@ always @(posedge clk or negedge rst_n) begin
           end
     endcase
     end
+
+
+
 
     
 endmodule

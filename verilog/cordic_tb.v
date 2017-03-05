@@ -1,3 +1,5 @@
+`timescale 1ns /1ns
+
 module cordic_tb;
 	wire [15:0] sin;
 	wire [15:0] cos;
@@ -16,18 +18,20 @@ module cordic_tb;
 always
    #5 clk=!clk;
 
-
-	always @(posedge clk)
+/*
+always @(posedge clk)
 	begin
-		deg<=deg+1'b1;
+		deg<=deg+2'b11;
 	end
 
+*/
+
 		
-	
+/*
 initial begin
 $monitor($time,"sin(deg)=%d;cos(deg)=%d",sin,cos);
 end
 
-
+*/
 
 endmodule
